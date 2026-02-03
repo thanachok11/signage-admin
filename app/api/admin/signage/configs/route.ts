@@ -21,7 +21,7 @@ export async function PUT(req: Request) {
 
     const body = await req.json();
 
-    const res = await fetch(`${base}/signage/configs`, {
+    const res = await fetch(`${base}/signage/config`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
