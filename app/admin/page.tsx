@@ -110,7 +110,7 @@ export default function AdminPage() {
                 },
             };
 
-            const res = await fetch("/api/admin/signage/config", {
+            const res = await fetch("/api/admin/signage/configs", {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload),
